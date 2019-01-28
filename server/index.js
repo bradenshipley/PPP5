@@ -1,3 +1,4 @@
+const path = require('path'); // Usually moved to the start of file
 require('dotenv').config()
 //imports
 const express = require('express')
@@ -26,6 +27,7 @@ const {
   getSketchCode,
   getOtherSketches
 } = require('./controllers/sketchController')
+
 
 const app = express()
 //socket.io constants
@@ -136,7 +138,10 @@ app.post('/addsketch', addSketch)
 app.delete('/sketch:id', deleteSketch)
 //edit sketch
 app.put('/editsketch', editSketch)
-
+//build endpoint
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../build/index.html'));
+});
 //server listening
 server.listen(SERVER_PORT, () => {
   console.log(`listening on port ${SERVER_PORT}`)

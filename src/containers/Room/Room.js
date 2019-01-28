@@ -21,7 +21,7 @@ class Room extends Component {
   shouldComponentUpdate(nextProps, nextState) {
     return (
       nextProps.room !== this.props.room ||
-      (this.props.room && nextProps.code != this.props.code) ||
+      (this.props.room && nextProps.code !== this.props.code) ||
       nextProps.showLogin !== this.props.showLogin ||
       nextProps.showRegister !== this.props.showRegister ||
       nextProps.showRoomSelector !== this.props.showRoomSelector
@@ -48,8 +48,8 @@ class Room extends Component {
     }
     let style
     this.props.showLogin ||
-    this.props.showRegister ||
-    this.props.showRoomSelector
+      this.props.showRegister ||
+      this.props.showRoomSelector
       ? (style = { zIndex: -1 })
       : (style = { zIndex: 5 })
     return (

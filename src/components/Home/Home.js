@@ -157,7 +157,6 @@ class Home extends Component {
         />
         <RoomButtons
           submitRoom={this.submitRoom}
-          addSketch={this.addSketch}
           selectRoom={this.selectRoom}
           roomSelectorToggle={this.roomSelectorToggle}
           showRoomSelector={this.state.showRoomSelector}

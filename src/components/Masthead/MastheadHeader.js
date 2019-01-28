@@ -20,7 +20,7 @@ class MastheadHeader extends Component {
   login = async () => {
     axios
       .post('/login', {
-        username: this.props.username,
+        user: this.props.username,
         password: this.props.password
       })
       .then(res => {
