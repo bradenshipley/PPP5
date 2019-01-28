@@ -1,0 +1,26 @@
+@import 'colors';
+.Modal {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 11100;
+  background-color: $steelBlue;
+  width: 150px;
+  height: 150px;
+  border: 1px solid $babyBlue;
+  box-shadow: 1px 1px 1px $celadonGreen;
+  padding: 16px;
+  margin: auto;
+  box-sizing: border-box;
+  transition: all 0.5s ease-out;
+}
+
+@media (min-width: 900px) {
+  .Modal {
+    width: 500px;
+    right: 33vw;
+  }
+}

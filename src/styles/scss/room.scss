@@ -1,0 +1,26 @@
+@import 'colors';
+.RoomContainer {
+  display: flex;
+  flex-direction: column;
+}
+.coding-window {
+  display: flex;
+  height: auto;
+  width: 100vw;
+}
+.Codemirror-Container {
+  height: 80vh;
+  width: 50vw;
+}
+.CodeMirror {
+  margin-left: 1vw;
+  height: 80vh;
+  width: 48vw;
+  // z-index: 1;
+  border: 1px solid $celadonGreen;
+}
+.preview-frame {
+  width: 49vw;
+  height: 80vh;
+  border: 1px solid black;
+}

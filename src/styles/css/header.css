@@ -1,0 +1,59 @@
+.Header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 5vh;
+  top: 0;
+  margin-top: none;
+  position: fixed;
+}
+
+.button {
+  display: flex;
+}
+
+.title {
+  display: flex;
+  justify-self: flex-start;
+  justify-content: flex-start;
+  text-align: flex-start;
+}
+
+.username-or-guest {
+  width: auto;
+  display: flex;
+  height: 5vh;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.currentUser {
+  width: auto;
+  margin-left: 10px;
+}
+
+.currentUserName span {
+  margin: 10px;
+}
+
+.logo {
+  justify-self: flex-start;
+  margin: none;
+  padding: none;
+  height: 5vh;
+  width: 40px;
+  left: 0;
+  top: 0;
+  z-index: 4;
+}
+
+@media (max-height: 800) {
+  .header {
+    margin-top: 5px;
+    margin-bottom: none;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

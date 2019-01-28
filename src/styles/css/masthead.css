@@ -1,0 +1,45 @@
+.Particle {
+  background-image: radial-gradient(circle, #c1dff0, #b7dcf0, #add8f0, #a2d5f1, #97d1f1, #8cc9ea, #80c2e4, #74badd, #65adcf, #55a0c0, #4693b2, #3587a4);
+  opacity: 5%;
+  z-index: -1;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+}
+
+.Masthead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 10;
+}
+
+.Welcome,
+.Logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  font-family: "Nova Square", cursive;
+  color: #b02e0c;
+  font-size: 1.1rem;
+}
+
+.Logo {
+  font-size: 3rem;
+}
+
+.Header {
+  width: 100vw;
+  height: 5vh;
+}
+
+/*# sourceMappingURL=masthead.css.map */

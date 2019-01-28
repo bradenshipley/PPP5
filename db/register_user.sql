@@ -1,0 +1,1 @@
+INSERT INTO code_along_users (username, hash) values ($1,$2)

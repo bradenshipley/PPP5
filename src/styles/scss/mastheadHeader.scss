@@ -1,0 +1,26 @@
+@import 'colors';
+
+.Login,
+.Register,
+.Tryout {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: auto;
+  margin: 10px;
+  padding: auto;
+  width: auto;
+}
+
+.inputs {
+  // width: 30vw;
+  display: flex;
+  flex-direction: row;
+  // justify-content: flex-end;
+  align-items: center;
+  top: 0;
+  right: 0;
+  position: fixed;
+  height: 30px;
+}

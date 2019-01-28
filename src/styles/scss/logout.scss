@@ -1,0 +1,16 @@
+.currentUser {
+  display: flex;
+  width: 10vw;
+  right: 0;
+  justify-content: space-around;
+}
+.currentUserName {
+  display: flex;
+
+  justify-self: center;
+  align-items: center;
+}
+.logout {
+  margin: 10px 0px;
+  align-self: center;
+}

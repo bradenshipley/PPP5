@@ -1,0 +1,406 @@
+.App {
+  text-align: center;
+}
+
+.account {
+  height: 100vh;
+  width: 100vw;
+  background: #88ccf1;
+}
+
+.notice {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  align-items: center;
+  padding: auto;
+  margin: auto;
+  margin-top: 30vh;
+  top: 40vh;
+  height: 30vh;
+  width: 30vh;
+  font-family: "Nova Square", cursive;
+  font-size: 200%;
+  color: #3587a4;
+  border: 3px solid #c1dff0;
+}
+
+.Particle {
+  background-image: radial-gradient(circle, #c1dff0, #b7dcf0, #add8f0, #a2d5f1, #97d1f1, #8cc9ea, #80c2e4, #74badd, #65adcf, #55a0c0, #4693b2, #3587a4);
+  opacity: 5%;
+  z-index: -1;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+}
+
+.Masthead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 10;
+}
+
+.Welcome,
+.Logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  font-family: "Nova Square", cursive;
+  color: #b02e0c;
+  font-size: 1.1rem;
+}
+
+.Logo {
+  font-size: 3rem;
+}
+
+.Header {
+  width: 100vw;
+  height: 5vh;
+}
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  background: #2d848a;
+}
+
+.RoomHeader {
+  width: 98vw;
+  height: 4vh;
+  display: inline-block;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin-left: 1vw;
+  top: 0;
+  margin-bottom: none;
+  align-items: center;
+}
+
+.preview-frame {
+  background: white;
+}
+
+@media screen and (min-height: 600px) {
+  .RoomHeader {
+    height: 3vh;
+    position: inherit;
+    margin-top: 0;
+    top: 5vh;
+  }
+}
+.Header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 5vh;
+  top: 0;
+  margin-top: none;
+  position: fixed;
+}
+
+.button {
+  display: flex;
+}
+
+.title {
+  display: flex;
+  justify-self: flex-start;
+  justify-content: flex-start;
+  text-align: flex-start;
+}
+
+.username-or-guest {
+  width: auto;
+  display: flex;
+  height: 5vh;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.currentUser {
+  width: auto;
+  margin-left: 10px;
+}
+
+.currentUserName span {
+  margin: 10px;
+}
+
+.logo {
+  justify-self: flex-start;
+  margin: none;
+  padding: none;
+  height: 5vh;
+  width: 40px;
+  left: 0;
+  top: 0;
+  z-index: 4;
+}
+
+@media (max-height: 800) {
+  .header {
+    margin-top: 5px;
+    margin-bottom: none;
+  }
+}
+.Modal {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 11100;
+  background-color: #3587a4;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #88ccf1;
+  box-shadow: 1px 1px 1px #2d848a;
+  padding: 16px;
+  margin: auto;
+  box-sizing: border-box;
+  transition: all 0.5s ease-out;
+}
+
+@media (min-width: 900px) {
+  .Modal {
+    width: 500px;
+    right: 33vw;
+  }
+}
+.Modal {
+  z-index: 1000;
+}
+
+.modal-login {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 500;
+  width: auto;
+}
+
+.modal-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60px;
+  width: auto;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.modal-buttons {
+  display: flex;
+  width: auto;
+  height: 10%;
+  justify-content: space-between;
+}
+
+.currentUser {
+  display: flex;
+  width: 10vw;
+  right: 0;
+  justify-content: space-around;
+}
+
+.currentUserName {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.logout {
+  margin: 10px 0px;
+  align-self: center;
+}
+
+.Backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.roomButtons {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.roomButtons button {
+  display: flex;
+  flex-wrap: nowrap;
+  height: auto;
+}
+
+@media screen and (min-height: 800) {
+  .roomButtons {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1480) {
+  .roomButtons button {
+    width: auto;
+  }
+}
+.Login,
+.Register,
+.Tryout {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: auto;
+  margin: 10px;
+  padding: auto;
+  width: auto;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  top: 0;
+  right: 0;
+  position: fixed;
+  height: 30px;
+}
+
+.roomSelector {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  border: none;
+  padding: none;
+  margin: none;
+  margin-left: 1vw;
+}
+
+.link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button {
+  display: flex;
+  border: none;
+  padding: none;
+  margin: none;
+  margin-left: 1vw;
+}
+
+.link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.Modal {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 11100;
+  background-color: #3587a4;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #88ccf1;
+  box-shadow: 1px 1px 1px #2d848a;
+  padding: 16px;
+  margin: auto;
+  box-sizing: border-box;
+  transition: all 0.5s ease-out;
+}
+
+@media (min-width: 900px) {
+  .Modal {
+    width: 500px;
+    right: 33vw;
+  }
+}
+.profileView {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  top: 5vh;
+}
+
+.sketchesView, .otherSketchesView {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  text-align: center;
+  z-index: 2;
+  border: 2px solid #b02e0c;
+  height: 90vh;
+  width: 40vw;
+  overflow: scroll;
+  margin-top: 6vh;
+}
+
+.otherSketchesView button {
+  margin-left: 3px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,29 @@
+@import 'colors';
+.Modal {
+  z-index: 1000;
+}
+.modal-login {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // height: 30%;
+  z-index: 500;
+  width: auto;
+}
+.modal-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60px;
+  width: auto;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.modal-buttons {
+  display: flex;
+  width: auto;
+  height: 10%;
+  justify-content: space-between;
+}

@@ -1,0 +1,48 @@
+@import 'colors';
+@mixin fullScreen {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+}
+.profileView {
+  @include fullScreen;
+  z-index: -1;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  top: 5vh;
+}
+.sketchesView {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  text-align: center;
+  z-index: 2;
+  border: 2px solid $rust;
+  height: 90vh;
+  width: 40vw;
+  overflow: scroll;
+  margin-top: 6vh;
+}
+.otherSketchesView {
+  @extend .sketchesView;
+  // display: flex;
+  // flex-direction: column;
+  // color: black;
+  // text-align: center;
+  // z-index: 2;
+  // border: 2px solid $rust;
+  // height: 90vh;
+  // width: 40vw;
+  // margin-top: 6vh;
+
+  // overflow: scroll;;
+}
+.otherSketchesView button {
+  margin-left: 3px;
+}

@@ -1,0 +1,24 @@
+@import 'colors';
+.account {
+  height: 100vh;
+  width: 100vw;
+  background: $babyBlue;
+}
+
+.notice {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  align-items: center;
+  padding: auto;
+  margin: auto;
+  margin-top: 30vh;
+  top: 40vh;
+  height: 30vh;
+  width: 30vh;
+  font-family: 'Nova Square', cursive;
+  font-size: 200%;
+  color: $steelBlue;
+  border: 3px solid $columbiaBlue;
+}

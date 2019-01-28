@@ -1,0 +1,27 @@
+//add styling here
+
+.roomButtons {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.roomButtons button {
+  display: flex;
+  flex-wrap: nowrap;
+  height: auto;
+}
+.roomButtons input {
+}
+@media screen and (min-height: 800) {
+  .roomButtons {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1480) {
+  .roomButtons button {
+    width: auto;
+  }
+}

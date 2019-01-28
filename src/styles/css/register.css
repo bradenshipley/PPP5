@@ -1,0 +1,27 @@
+.modal-register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin: 10px;
+}
+
+.modal-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60px;
+  width: auto;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.modal-buttons {
+  display: flex;
+  width: auto;
+  height: 10%;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=register.css.map */
