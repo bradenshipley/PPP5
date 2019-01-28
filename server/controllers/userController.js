@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs')
 async function login(req, res) {
   const db = req.app.get('db')
   console.log('this is the req.body at the server', req.body)
-  let foundUser = await db.get_user([req.body.username])
+  let foundUser = await db.get_user([req.body.user])
   const user = foundUser[0]
   if (user)
     try {

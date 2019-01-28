@@ -8,7 +8,7 @@ const massive = require('massive')
 //socket.io imports
 const http = require('http')
 const socketIo = require('socket.io')
-// const port = process.env.PORT || 5050
+
 //destructuring
 const { SERVER_PORT, SESSION_SECRET, CONNECTION_STRING } = process.env
 //controller destructuring

@@ -1,4 +1,5 @@
 import axios from 'axios'
+// require('dotenv').config()
 
 //initial state
 const initialState = {
@@ -6,7 +7,7 @@ const initialState = {
   password: '',
   code: 'function setup() {\n\n  }  \n function draw(){ \n\n  }',
   room: '',
-  endpoint: 'http://localhost:5050',
+  // endpoint: process.env.REACT_APP_ENDPOINT,
   currentSketch: '',
   sketches: [],
   allOtherSketches: [],

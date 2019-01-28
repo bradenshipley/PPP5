@@ -6,7 +6,7 @@
 .pnp.js
 .sass-cache
 .env
-
+.env.prod
 
 # testing
 /coverage

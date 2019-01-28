@@ -33,7 +33,7 @@ class Home extends Component {
   // and then sends on room to socket to join, and sets a listener for coding events
   initializeSocket = () => {
     if (this.props.room !== '') {
-      const { endpoint } = this.props
+      const endpoint = process.env.REACT_APP_ENDPOINT
       const socket = socketIOClient(endpoint)
       socket.on('hello', res => console.log(res))
       socket.emit('room', {
