@@ -33,7 +33,7 @@ const app = express()
 //socket.io constants
 const server = http.createServer(app)
 const io = socketIo(server)
-
+app.use(express.static(`${__dirname}/../build`));
 app.use(json())
 //session code
 app.use(
