@@ -52,6 +52,19 @@
   font-size: 3rem;
 }
 
+  a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+
 .Header {
   width: 100vw;
   height: 5vh;

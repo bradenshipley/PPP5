@@ -19,6 +19,7 @@ class Masthead extends Component {
               <h1>PPP5</h1>
             </div>
             <h3> a P5.js pair programming application built in React.</h3>
+            <h3> For more information on P5.js, click <a target="_blank" className="nostyle" href={"https://p5js.org/reference/"}>here</a></h3>
           </div>
         </div>
       </>

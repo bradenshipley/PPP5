@@ -4,6 +4,7 @@ import Register from '../Register/Register'
 import { toast } from 'react-toastify'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
+import HomeButton from '../Buttons/HomeButton'
 import Logout from '../Logout/Logout'
 import axios from 'axios'
 import Modal from '../Modal/Modal'
@@ -98,7 +99,10 @@ class MastheadHeader extends Component {
             </div>
           </>
         ) : (
-            <Logout />
+            <>
+              <HomeButton />
+              <Logout />
+            </>
           )}
       </div>
     )
