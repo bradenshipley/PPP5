@@ -1,9 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 The site is currently hosted at www.pairprogrammingp5.com
 
-## Available Scripts
 
-Welcome to PPP5!
+
+##Welcome to PPP5!
 
 ![](https://media.giphy.com/media/8FDv09cSS63vpgVWYY/giphy.gif)
 
