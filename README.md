@@ -1,4 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The site is currently hosted at www.pairprogrammingp5.com
 
 ## Available Scripts
 
@@ -21,6 +22,9 @@ After creating a sketch you can save it, open it again, edit it, and save those 
 
 ### "Forking" Other Sketches
 Users can see sketches other people have made. The app will not leave you save other sketches. If you try, the app will notify you with an error, and the save button will re-render as an "Add Sketch" button with an input field for the sketch name.
+
+### Pair Programming
+ To begin pair programming, simply select a room using the "Select Room" button and enter a unique room name. If another user enters that same identifier, all code entered on their client will be simultaneously typed in your client. To leave, simply click the "Leave Room" button.
 
 ### Submitting changes
 Feel free to fork this repo and submit changes/improvements. 
