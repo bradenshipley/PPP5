@@ -22,6 +22,7 @@ After creating a sketch you can save it, open it again, edit it, and save those 
 
 ### "Forking" Other Sketches
 Users can see sketches other people have made. The app will not leave you save other sketches. If you try, the app will notify you with an error, and the save button will re-render as an "Add Sketch" button with an input field for the sketch name.
+
 ![](https://media.giphy.com/media/25FfULS0hlKMaBl5ZG/giphy.gif)
 
 ### Pair Programming
