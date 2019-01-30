@@ -33,20 +33,7 @@ class MastheadHeader extends Component {
         console.log(err)
       })
   }
-  register = () => {
-    axios
-      .post('/register', {
-        username: this.props.username,
-        password: this.props.password
-      })
-      .then(res => {
-        this.handleRedirect()
-      })
-      .catch(err => {
-        toast('Could Not Register')
-        console.log(err)
-      })
-  }
+
   handleRedirect = () => {
     this.props.history.push('/home')
   }
@@ -59,6 +46,25 @@ class MastheadHeader extends Component {
     this.setState({
       showRegister: !this.state.showRegister
     })
+  }
+  handleRegister = async () => {
+    let result = await axios.post('/register', {
+      username: this.props.username,
+      password: this.props.password
+    })
+    if (result) {
+      axios
+        .post('/login', {
+          user: this.props.username,
+          password: this.props.password
+        })
+        .then(res => {
+          this.props.updateCurrentUser(res.data)
+          this.handleRedirect()
+        })
+    } else {
+      toast('could not register')
+    }
   }
 
   render() {
@@ -90,7 +96,7 @@ class MastheadHeader extends Component {
                 modalClosed={this.handleShowRegister}
               >
                 <Register
-                  register={this.register}
+                  register={this.handleRegister}
                   passwordChange={this.props.handlePasswordChange}
                   usernameChange={this.props.handleUsernameChange}
                   show={this.handleShowRegister}
